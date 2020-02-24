@@ -16,7 +16,7 @@ BUILD_DIR ?= ./build
 ifdef SHARE
 SO = -so
 SO_CFLAGS = -fPIC -D_SHARE=1
-SO_LDLAGS = -shared -fPIC -lm
+SO_LDLAGS = -shared -fPIC
 endif
 
 OBJ_DIR ?= $(BUILD_DIR)/obj-$(ISA)$(SO)
@@ -68,7 +68,7 @@ NEMU_EXEC := $(BINARY) $(ARGS) $(IMG)
 $(BINARY): $(OBJS)
 	$(call git_commit, "compile")
 	@echo + LD $@
-	@$(LD) -O2 -rdynamic $(SO_LDLAGS) -o $@ $^ -lSDL2 -lreadline -ldl
+	@$(LD) -O2 -rdynamic $(SO_LDLAGS) -o $@ $^ -lSDL2 -lreadline -ldl -lm
 
 run-env: $(BINARY) $(QEMU_SO)
 
