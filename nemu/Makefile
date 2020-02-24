@@ -16,7 +16,7 @@ BUILD_DIR ?= ./build
 ifdef SHARE
 SO = -so
 SO_CFLAGS = -fPIC -D_SHARE=1
-SO_LDLAGS = -shared -fPIC
+SO_LDLAGS = -shared -fPIC -lm
 endif
 
 OBJ_DIR ?= $(BUILD_DIR)/obj-$(ISA)$(SO)
@@ -30,7 +30,7 @@ include Makefile.git
 CC = gcc
 LD = gcc
 INCLUDES  = $(addprefix -I, $(INC_DIR))
-CFLAGS   += -O2 -MMD -Wall -Werror -ggdb3 $(INCLUDES) -D__ISA__=$(ISA) -fomit-frame-pointer -lm
+CFLAGS   += -O2 -MMD -Wall -Werror -ggdb3 $(INCLUDES) -D__ISA__=$(ISA) -fomit-frame-pointer 
 
 QEMU_DIFF_PATH = $(NEMU_HOME)/tools/qemu-diff
 QEMU_SO = $(QEMU_DIFF_PATH)/build/$(ISA)-qemu-so
