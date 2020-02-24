@@ -6,8 +6,11 @@
 #include <stdlib.h>
 #include <readline/readline.h>
 #include <readline/history.h>
+#include <math.h>
 
 void cpu_exec(uint64_t);
+
+extern void isa_reg_display();
 
 /* We use the `readline' library to provide more flexibility to read from stdin. */
 static char* rl_gets() {
@@ -36,6 +39,82 @@ static int cmd_q(char *args) {
   return -1;
 }
 
+static int cmd_si(char *args) {
+  if (args == NULL) {
+    cpu_exec(1);  
+  }
+  else {
+    char *ch = strtok(args, " ");
+    int num = atoi(ch);
+    if (num <= 0) {
+      cpu_exec(-1);
+    }
+    else { 
+      cpu_exec(num);
+    }
+  }
+  return 0;
+}
+
+static int cmd_info(char *args) {
+  if (args == NULL) {
+     printf("please input 'r' or 'w' after 'info' to command\n");
+     return 0;
+  }
+  char *ch = strtok(args, " ");
+  if (strcmp(ch, "r") == 0) {
+    isa_reg_display();
+  }
+  // else if (strcmp(ch,"w")==0){
+  //   view_watchpoint();
+  // }
+  else {
+    printf("please input 'r' or 'w' after 'info' to command\n");
+  }
+  return 0;
+}
+
+static int cmd_x(char *args) {
+  if (args == NULL) {
+     printf("please input an integer and expression\n");
+     return 0;
+  }
+  char *ch = strtok(args, " ");
+  int num = atoi(ch);
+  if (num <= 0) {
+     printf("please input an positive integer\n");
+     return 0;
+  }
+  char *expr = strtok(NULL, " ");
+  if (expr == NULL) {
+     printf("please input an hexadecimal address like 0x~\n");
+     return 0;
+  }
+  paddr_t addr;
+  sscanf(expr, "%x", &addr);
+  double p = num;
+  int n = ceil(p / 4.0);
+  for (int i = 0; i < n; i++) {
+    printf("0x%08x: ", addr);
+    if (i == num / 4) {
+      for (int j = 0; j < num % 4; j++) {
+        int memory = paddr_read(addr, 4);
+        printf("0x%08x ", memory);
+        addr += 4;
+      }
+    }
+    else {
+      for (int j = 0; j < 4; j++) {
+        int memory = paddr_read(addr, 4);
+        printf("0x%08x ", memory);
+        addr += 4;
+      }
+	  }
+    printf("\n");
+  }
+  return 0;
+}
+
 static int cmd_help(char *args);
 
 static struct {
@@ -46,6 +125,9 @@ static struct {
   { "help", "Display informations about all supported commands", cmd_help },
   { "c", "Continue the execution of the program", cmd_c },
   { "q", "Exit NEMU", cmd_q },
+  { "si", "Single execute" , cmd_si },
+  { "info", "Print program status, 'r' for register status and 'w' for watchpoint information", cmd_info },
+  { "x","Scan memory",cmd_x}
 
   /* TODO: Add more commands */
 
