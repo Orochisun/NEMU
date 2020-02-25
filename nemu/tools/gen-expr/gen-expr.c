@@ -5,10 +5,56 @@
 #include <assert.h>
 #include <string.h>
 
+#define random(x) (rand()%x)
+
 // this should be enough
-static char buf[65536];
+static char buf[65536] = "";
+
+int random_prob() {
+  int a[10] = {0, 0, 0, 1, 1, 2, 2, 2, 2, 2};
+  int k = random(10);
+  return a[k];
+}
+
+static inline void gen_rand_op() {
+  switch (random(4)) {
+    case 0: { strcat(buf, "+"); break; }
+    case 1: { strcat(buf, "-"); break; }
+    case 2: { strcat(buf, "*"); break; }
+    case 3: { strcat(buf, "/"); break; }
+    default: assert(0);
+  }
+}
+
+static int sign = 0;
 static inline void gen_rand_expr() {
-  buf[0] = '\0';
+  int opt = random_prob();
+  if (sign > 50) opt = 0;
+  sign++;
+  switch (opt) {
+    case 0: {
+      char s[4];
+      int a = random(100);
+      while (a == 0) {
+        a = random(100);
+      }
+      sprintf(s, "%d", a);
+      strcat(buf, s);
+      break;
+    }
+    case 1: {
+      strcat(buf, "(");
+      gen_rand_expr();
+      strcat(buf, ")");
+      break;
+    }
+    default: {
+      gen_rand_expr();
+      gen_rand_op();
+      gen_rand_expr();
+      break;
+    }
+  }
 }
 
 static char code_buf[65536];
@@ -21,14 +67,14 @@ static char *code_format =
 "}";
 
 int main(int argc, char *argv[]) {
-  int seed = time(0);
-  srand(seed);
+  srand((unsigned)time(NULL));
   int loop = 1;
   if (argc > 1) {
     sscanf(argv[1], "%d", &loop);
   }
   int i;
-  for (i = 0; i < loop; i ++) {
+  for (i = 0; i < loop; i++) {
+    memset(buf, 0, sizeof(buf));
     gen_rand_expr();
 
     sprintf(code_buf, code_format, buf);
@@ -45,10 +91,11 @@ int main(int argc, char *argv[]) {
     assert(fp != NULL);
 
     int result;
-    fscanf(fp, "%d", &result);
+    ret = fscanf(fp, "%d", &result);
+    assert(ret >= 0);
     pclose(fp);
-
-    printf("%u %s\n", result, buf);
+    if (result != atoi(buf))
+      printf("%u %s\n",result, buf);
   }
   return 0;
 }

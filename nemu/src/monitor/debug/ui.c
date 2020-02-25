@@ -123,11 +123,11 @@ static struct {
   int (*handler) (char *);
 } cmd_table [] = {
   { "help", "Display informations about all supported commands", cmd_help },
-  { "c", "Continue the execution of the program", cmd_c },
-  { "q", "Exit NEMU", cmd_q },
+  { "c ", "Continue the execution of the program", cmd_c },
+  { "q ", "Exit NEMU", cmd_q },
   { "si", "Single execute" , cmd_si },
-  { "info", "Print program status, 'r' for register status and 'w' for watchpoint information", cmd_info },
-  { "x","Scan memory",cmd_x}
+  { "i ", "Print program status, 'r' for register status and 'w' for watchpoint information", cmd_info },
+  { "x ","Scan memory", cmd_x }
 
   /* TODO: Add more commands */
 
