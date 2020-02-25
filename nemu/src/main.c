@@ -11,12 +11,8 @@ int main(int argc, char *argv[]) {
   int is_batch_mode = init_monitor(argc, argv);
   
   // test expr
-  if (argc < 2) {
-    printf("usage\n");
-    return 0;
-  }
   FILE *fp;
-  fp = fopen(argv[1], "r");
+  fp = fopen("/home/ssj/ics2019/nemu/tools/gen-expr/input", "r");
   char buf[101];
   while(fgets(buf, sizeof(buf), fp)){
     char *p = strtok(buf, " ");
