@@ -29,7 +29,7 @@ static inline void gen_rand_op() {
 static int sign = 0;
 static inline void gen_rand_expr() {
   int opt = random_prob();
-  if (sign > 50) opt = 0;
+  if (sign > 10) opt = 0;
   sign++;
   switch (opt) {
     case 0: {
