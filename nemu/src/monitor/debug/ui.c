@@ -9,8 +9,9 @@
 #include <math.h>
 
 void cpu_exec(uint64_t);
-
 extern void isa_reg_display();
+extern uint32_t paddr_read(paddr_t addr, int len);
+extern void clear_tokens();
 
 /* We use the `readline' library to provide more flexibility to read from stdin. */
 static char* rl_gets() {
@@ -56,18 +57,18 @@ static int cmd_si(char *args) {
   return 0;
 }
 
-static int cmd_info(char *args) {
+static int cmd_i(char *args) {
   if (args == NULL) {
-     printf("please input 'r' or 'w' after 'info' to command\n");
+     printf("please input 'r' or 'w' after 'i' to command\n");
      return 0;
   }
   char *ch = strtok(args, " ");
   if (strcmp(ch, "r") == 0) {
     isa_reg_display();
   }
-  // else if (strcmp(ch,"w")==0){
-  //   view_watchpoint();
-  // }
+  else if (strcmp(ch, "w") == 0) {
+    view_watchpoint();
+  }
   else {
     printf("please input 'r' or 'w' after 'info' to command\n");
   }
@@ -115,6 +116,41 @@ static int cmd_x(char *args) {
   return 0;
 }
 
+static int cmd_p(char *args) {
+  char *ch = args;
+  if (ch == NULL) {
+    printf("please input an expression\n");
+    return 0;
+  }
+  bool success = true;
+  uint32_t result = expr(ch, &success);
+  ch = NULL;
+  if (success) {
+    printf("%#x\n",result);
+    clear_tokens();
+  }
+  else {
+    printf("error p\n");
+  }
+  return 0;
+}
+
+static int cmd_w(char *args) {
+  set_watchpoint(args);
+  return 0;
+}
+
+static int cmd_d(char *args) {
+  char *ch = strtok(args, " ");
+  int number = atoi(ch);
+  if (number < 0) {
+    printf("input an nonnegative integer");
+    return 0;
+  }
+  else { free_wp(number); }
+  return 0;
+}
+
 static int cmd_help(char *args);
 
 static struct {
@@ -125,9 +161,12 @@ static struct {
   { "help", "Display informations about all supported commands", cmd_help },
   { "c", "Continue the execution of the program", cmd_c },
   { "q", "Exit NEMU", cmd_q },
-  { "si", "Single execute" , cmd_si },
-  { "i", "Print program status, 'r' for register status and 'w' for watchpoint information", cmd_info },
-  { "x","Scan memory", cmd_x }
+  { "si","Single execute" , cmd_si },
+  { "i", "Print program status, 'r' for register status and 'w' for watchpoint information", cmd_i },
+  { "x", "Scan memory", cmd_x },
+  { "p", "Expression evaluation", cmd_p },
+  { "w", "Set watchpoint", cmd_w },
+  { "d", "Delete watchpoint", cmd_d },
 
   /* TODO: Add more commands */
 
