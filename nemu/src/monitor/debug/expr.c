@@ -233,6 +233,7 @@ int main_operator(int p, int q) {
         if (tokens[i].type == '(') { tmp++; }
         else if (tokens[i].type == ')') { tmp--; }
         if (tmp == 0) break;
+        i++;
       }
       if (i >= q) break;
     }
