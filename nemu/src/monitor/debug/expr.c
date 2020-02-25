@@ -277,6 +277,7 @@ uint32_t eval(int p, int q) {
   else if (check_parentheses(p, q)) return eval(p + 1, q - 1);
   else {
     int op = main_operator(p, q);
+    printf("op!!! %d", op);
     uint32_t val1 = eval(p, op - 1);
     uint32_t val2 = eval(op + 1, q);
     switch (tokens[op].type) {
