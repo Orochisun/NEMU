@@ -225,7 +225,7 @@ int main_operator(int p, int q) {
   int op = tokens[p].type;
   int op_position = p;
   bool init = false;
-  for (int i = q; i <= q; ++i) {
+  for (int i = p; i <= q; ++i) {
     if (tokens[i].type == '(') {
       int tmp = 1;
       i++;
