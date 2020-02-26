@@ -11,27 +11,27 @@ int main(int argc, char *argv[]) {
   int is_batch_mode = init_monitor(argc, argv);
   
   // test expr
-  FILE *fp;
-  fp = fopen("/home/ssj/ics2019/nemu/tools/gen-expr/input", "r");
-  char buf[101];
-  while(fgets(buf, sizeof(buf), fp)){
-    char *p = strtok(buf, " ");
-    char *q = strtok(NULL, "\n");
-    bool success = true;
-    int res = expr(q, &success);
-    if(success) {
-      if(atoi(p) == res) {
-        printf("%s = %s, myresult=%d, equal=true\n", q, p, res);
-      }
-      else {
-        printf("%s = %s, myresult=%d, equal=false\n", q, p, res);
-      }
-    }
-    else {
-      printf("fail to eval");
-    }
-  } 
-  fclose(fp);
+  // FILE *fp;
+  // fp = fopen("/home/ssj/ics2019/nemu/tools/gen-expr/input", "r");
+  // char buf[101];
+  // while(fgets(buf, sizeof(buf), fp)){
+  //   char *p = strtok(buf, " ");
+  //   char *q = strtok(NULL, "\n");
+  //   bool success = true;
+  //   int res = expr(q, &success);
+  //   if(success) {
+  //     if(atoi(p) == res) {
+  //       printf("%s = %s, myresult=%d, equal=true\n", q, p, res);
+  //     }
+  //     else {
+  //       printf("%s = %s, myresult=%d, equal=false\n", q, p, res);
+  //     }
+  //   }
+  //   else {
+  //     printf("fail to eval");
+  //   }
+  // } 
+  // fclose(fp);
 
   /* Receive commands from user. */
   ui_mainloop(is_batch_mode);
