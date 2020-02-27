@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
   /* Initialize the monitor. */
   int is_batch_mode = init_monitor(argc, argv);
   
-  // test expr
+  /* Test expr.*/
   // FILE *fp;
   // fp = fopen("/home/ssj/ics2019/nemu/tools/gen-expr/input", "r");
   // char buf[101];
