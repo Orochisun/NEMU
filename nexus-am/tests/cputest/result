@@ -1,0 +1,7 @@
+# Building recursion [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/recursion-x86-nemu.elf
++ OBJCOPY -> build/recursion-x86-nemu.bin
+Building x86-nemu
