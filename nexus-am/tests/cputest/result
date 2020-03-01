@@ -549,3 +549,14 @@ nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000f0
 + LD -> build/fib-x86-nemu.elf
 + OBJCOPY -> build/fib-x86-nemu.bin
 Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/fib-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000ac
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 877[0m
+ recursion sub-longlong quick-sort bit add sum movsx mul-longlong fact to-lower-case load-store div max bubble-sort mov-c select-sort matrix-mul shuixianhua if-else goldbach wanshu shift min3 hello-str prime add-longlong switch dummy string unalign leap-year pascal fib
