@@ -30,6 +30,12 @@ make_EHelper(popa) {
   print_asm("popa");
 }
 
+make_EHelper(pushl) {
+  TODO();
+
+  print_asm("pushl");
+}
+
 make_EHelper(leave) {
   TODO();
 
