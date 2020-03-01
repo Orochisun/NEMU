@@ -1,0 +1,562 @@
+# Building recursion [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/recursion-x86-nemu.elf
++ OBJCOPY -> build/recursion-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/recursion-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001001ec
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 4628[0m
+# Building sub-longlong [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/sub-longlong-x86-nemu.elf
++ OBJCOPY -> build/sub-longlong-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/sub-longlong-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000dc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1750[0m
+# Building quick-sort [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/quick-sort-x86-nemu.elf
++ OBJCOPY -> build/quick-sort-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/quick-sort-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001001a4
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 4473[0m
+# Building bit [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/bit-x86-nemu.elf
++ OBJCOPY -> build/bit-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/bit-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010022c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 528[0m
+# Building add [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/add-x86-nemu.elf
++ OBJCOPY -> build/add-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/add-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000e0
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1498[0m
+# Building sum [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/sum-x86-nemu.elf
++ OBJCOPY -> build/sum-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/sum-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010009c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 640[0m
+# Building movsx [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/movsx-x86-nemu.elf
++ OBJCOPY -> build/movsx-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/movsx-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001001c8
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 193[0m
+# Building mul-longlong [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/mul-longlong-x86-nemu.elf
++ OBJCOPY -> build/mul-longlong-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/mul-longlong-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010012c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 401[0m
+# Building fact [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/fact-x86-nemu.elf
++ OBJCOPY -> build/fact-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/fact-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000d0
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 607[0m
+# Building to-lower-case [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/to-lower-case-x86-nemu.elf
++ OBJCOPY -> build/to-lower-case-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/to-lower-case-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000bc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3249[0m
+# Building load-store [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/load-store-x86-nemu.elf
++ OBJCOPY -> build/load-store-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/load-store-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100150
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 573[0m
+# Building div [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/div-x86-nemu.elf
++ OBJCOPY -> build/div-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/div-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000dc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1290[0m
+# Building max [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/max-x86-nemu.elf
++ OBJCOPY -> build/max-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/max-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000e8
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1654[0m
+# Building bubble-sort [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/bubble-sort-x86-nemu.elf
++ OBJCOPY -> build/bubble-sort-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/bubble-sort-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100178
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3921[0m
+# Building mov-c [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/mov-c-x86-nemu.elf
++ OBJCOPY -> build/mov-c-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/mov-c-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100144
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 129[0m
+# Building select-sort [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/select-sort-x86-nemu.elf
++ OBJCOPY -> build/select-sort-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/select-sort-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010018c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3520[0m
+# Building matrix-mul [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/matrix-mul-x86-nemu.elf
++ OBJCOPY -> build/matrix-mul-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/matrix-mul-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010012c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 11294[0m
+# Building shuixianhua [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/shuixianhua-x86-nemu.elf
++ OBJCOPY -> build/shuixianhua-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/shuixianhua-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100140
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 17281[0m
+# Building if-else [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/if-else-x86-nemu.elf
++ OBJCOPY -> build/if-else-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/if-else-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100120
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 419[0m
+# Building goldbach [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/goldbach-x86-nemu.elf
++ OBJCOPY -> build/goldbach-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/goldbach-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010014c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 2560[0m
+# Building wanshu [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/wanshu-x86-nemu.elf
++ OBJCOPY -> build/wanshu-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/wanshu-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000cc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3627[0m
+# Building shift [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/shift-x86-nemu.elf
++ OBJCOPY -> build/shift-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/shift-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000f4
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 525[0m
+# Building min3 [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/min3-x86-nemu.elf
++ OBJCOPY -> build/min3-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/min3-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x0010012c
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1897[0m
+# Building hello-str [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/hello-str-x86-nemu.elf
++ OBJCOPY -> build/hello-str-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/hello-str-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100114
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 120[0m
+# Building prime [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/prime-x86-nemu.elf
++ OBJCOPY -> build/prime-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/prime-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000c0
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 10332[0m
+# Building add-longlong [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/add-longlong-x86-nemu.elf
++ OBJCOPY -> build/add-longlong-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/add-longlong-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000dc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 1750[0m
+# Building switch [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/switch-x86-nemu.elf
++ OBJCOPY -> build/switch-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/switch-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000cc
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 363[0m
+# Building dummy [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/dummy-x86-nemu.elf
++ OBJCOPY -> build/dummy-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/dummy-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x00100028
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 14[0m
+# Building string [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/string-x86-nemu.elf
++ OBJCOPY -> build/string-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/string-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;31mHIT BAD TRAP[0m at pc = 0x0010017e
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 66[0m
+# Building unalign [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/unalign-x86-nemu.elf
++ OBJCOPY -> build/unalign-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/unalign-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000ac
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 116[0m
+# Building leap-year [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/leap-year-x86-nemu.elf
++ OBJCOPY -> build/leap-year-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/leap-year-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000f8
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3388[0m
+# Building pascal [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/pascal-x86-nemu.elf
++ OBJCOPY -> build/pascal-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/pascal-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000f0
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 3877[0m
+# Building fib [x86-nemu] with AM_HOME {/home/ssj/ics2019/nexus-am}
+# Building lib-am [x86-nemu]
+# Building lib-klib [x86-nemu]
+# Creating binary image [x86-nemu]
++ LD -> build/fib-x86-nemu.elf
++ OBJCOPY -> build/fib-x86-nemu.bin
+Building x86-nemu
+[1;34m[src/monitor/monitor.c,48,load_img] The image is /home/ssj/ics2019/nexus-am/tests/cputest/build/fib-x86-nemu.bin[0m
+[1;34m[src/memory/memory.c,16,register_pmem] Add 'pmem' at [0x00000000, 0x07ffffff][0m
+[1;34m[src/monitor/monitor.c,20,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,23,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,28,welcome] Build time: 22:43:44, Mar  1 2020[0m
+Welcome to [1;41m[1;33mx86[0m-NEMU!
+For help, type "help"
+nemu: [1;32mHIT GOOD TRAP[0m at pc = 0x001000ac
+
+[1;34m[src/monitor/cpu-exec.c,29,monitor_statistic] total guest instructions = 877[0m
+ recursion sub-longlong quick-sort bit add sum movsx mul-longlong fact to-lower-case load-store div max bubble-sort mov-c select-sort matrix-mul shuixianhua if-else goldbach wanshu shift min3 hello-str prime add-longlong switch dummy string unalign leap-year pascal fib
