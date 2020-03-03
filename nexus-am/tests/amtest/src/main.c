@@ -30,7 +30,7 @@ int main(const char *args) {
       for (int ch = 0; ch < 256; ch++) {
         if (tests[ch]) {
           char tmp = ch;
-          printf("  %c: %s\n", tmp, tests[ch]);
+          printf("?  %c: %s\n", tmp, tests[ch]);
         }
       }
   }
