@@ -11,7 +11,7 @@ size_t strlen(const char *s) {
 }
 
 char *strcpy(char* dst, const char* src) {
-  return strncpy(dst,src,strlen(src));
+  return strncpy(dst, src, strlen(src));
 }
 
 char* strncpy(char* dst, const char* src, size_t n) {
