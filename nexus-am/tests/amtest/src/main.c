@@ -29,8 +29,9 @@ int main(const char *args) {
       printf("Usage: make run mainargs=*\n");
       for (int ch = 0; ch < 256; ch++) {
         if (tests[ch]) {
-          char tmp = ch;
-          printf("?  %c: %s\n", tmp, tests[ch]);
+          char tmp[2];
+          tmp[0] = ch;tmp[1] = '\0';
+          printf("?  %s: %s\n", tmp, tests[ch]);
         }
       }
   }
