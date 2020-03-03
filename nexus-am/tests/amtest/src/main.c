@@ -31,7 +31,7 @@ int main(const char *args) {
         if (tests[ch]) {
           char tmp[2];
           tmp[0] = ch;tmp[1] = '\0';
-          printf("?  %s: %s\n", tmp, tests[ch]);
+          printf("  %s: %s\n", tmp, tests[ch]);
         }
       }
   }
