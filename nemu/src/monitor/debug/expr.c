@@ -288,7 +288,7 @@ uint32_t eval(int p, int q) {
       case TK_EQ: return val1 == val2;
       case TK_UNEQ: return val1 != val2;
       case TK_AND: return val1 && val2;
-      case DEREF: return paddr_read(val2, 4);
+      case DEREF: printf("1?"); return paddr_read(val2, 4);
       default: assert(0);
     }
   }
