@@ -65,6 +65,8 @@ int vsprintf(char *out, const char *fmt, va_list ap) {
     switch(*fmt) {
       case 'd':
         break;
+      case 'c':
+        break;
       case 's': {
         char *s = va_arg(ap, char *);
         int len_s = strlen(s);
