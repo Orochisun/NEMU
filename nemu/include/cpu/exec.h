@@ -8,6 +8,8 @@
 #define make_EHelper(name) void concat(exec_, name) (vaddr_t *pc)
 typedef void (*EHelper) (vaddr_t *);
 
+extern void raise_intr(uint32_t NO, vaddr_t ret_addr);
+
 #include "cpu/decode.h"
 
 typedef struct {

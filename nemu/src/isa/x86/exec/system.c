@@ -1,8 +1,9 @@
 #include "cpu/exec.h"
 
 make_EHelper(lidt) {
-  TODO();
-
+  // TODO();
+  cpu.IDTR.limit = vaddr_read(id_dest->addr, 2);
+  cpu.IDTR.base  = vaddr_read(id_dest->addr + 2, 4);
   print_asm_template1(lidt);
 }
 
@@ -21,15 +22,19 @@ make_EHelper(mov_cr2r) {
 }
 
 make_EHelper(int) {
-  TODO();
-
+  // TODO();
+  raise_intr(id_dest->val, decinfo.seq_pc);
   print_asm("int %s", id_dest->str);
 
   difftest_skip_dut(1, 2);
 }
 
 make_EHelper(iret) {
-  TODO();
+  // TODO();
+  rtl_pop(&s0);
+  rtl_j(s0);
+  rtl_pop(&cpu.CS);
+  rtl_pop(&cpu.eflags.flags);
 
   print_asm("iret");
 }
