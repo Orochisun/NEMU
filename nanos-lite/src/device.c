@@ -19,6 +19,11 @@ size_t events_read(void *buf, size_t offset, size_t len) {
 
 static char dispinfo[128] __attribute__((used)) = {};
 
+size_t discinfo_sizes() {
+  int len = strlen(dispinfo);
+  return len;
+}
+
 size_t dispinfo_read(void *buf, size_t offset, size_t len) {
   return 0;
 }
