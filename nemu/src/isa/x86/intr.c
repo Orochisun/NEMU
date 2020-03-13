@@ -11,7 +11,7 @@ void raise_intr(uint32_t NO, vaddr_t ret_addr) {
   rtl_push(&ret_addr);
   lo = vaddr_read(cpu.IDTR.base + 8 * NO, 4) & 0x0000ffff;
   hi = vaddr_read(cpu.IDTR.base + 8 * NO + 4, 4) & 0xffff0000;
-  rtl_j(hi|lo);
+  rtl_j(hi | lo);
 }
 
 bool isa_query_intr(void) {
