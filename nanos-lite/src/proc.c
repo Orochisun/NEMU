@@ -27,7 +27,7 @@ void init_proc() {
   Log("Initializing processes...");
 
   // load program here
-  naive_uload(NULL, NULL);
+  naive_uload(NULL, "/home/ssj/ics2019/navy-apps/tests/dummy/build/dummy-x86");
 }
 
 _Context* schedule(_Context *prev) {
